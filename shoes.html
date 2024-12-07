@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donte Hub - Shoes Donation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="navbar-brand">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Donate Hub Logo"> 
+                <a href="#">Donate Hub</a>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Donate</a>
+            <a href="index.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="heading">
+            <h2>Shoes Donation</h2>
+            <p>Your generous donations can help those in need. Here’s how you can contribute:</p>
+            <img src="dshoes.jpeg" alt="home-image">
+        </div>
+
+        <form id="donationForm">
+            <div class="form-group">
+                <label for="category">Select Category:</label>
+                <select id="category" name="category" class="form-control">
+                    <option value="shoes">Shoes</option>
+                    <option value="sneakers">Sneakers</option>
+                    <option value="boots">Boots</option>
+                    <option value="sandals">Sandals</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Select Gender:</label>
+                <select id="gender" name="gender" class="form-control">
+                    <option value="unisex">Unisex</option>
+                    <option value="men">Men</option>
+                    <option value="women">Women</option>
+                    <option value="kids">Kids</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Select Size:</label>
+                <select id="size" name="size" class="form-control">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">Extra Large</option>
+                </select>
+            </div>
+            <br/>
+            <button type="button" id="donationButton" class="btn1"onclick="showThankYouMessage()">DONATE</button>
+            <script>
+                function showThankYouMessage() {
+                    // Show an alert when the button is clicked
+                    alert("Thank you for donating!");
+                }
+            </script>
+        </form>
+
+        <div id="donationModal" class="modal">
+            <div class="modal-content">
+                <br/>
+                <h3>Thank You for Your Interest!</h3>
+                <p>Your donations make a significant impact. Please reach out to us for more details.</p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <br/>
+            <h3>Contact Us for More Information:</h3>
+            <p>Email: <a href="mailto:support@dontehub.com">support@dontehub.com</a></p>
+            <p>Phone: <a href="9623488222">9623488222</a></p>
+        </div>
+    </div>
+    <br/><br/>
+    <footer>
+        <p>&copy; 2024 Donte Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

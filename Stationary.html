@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Hub - Stationery Donation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="navbar-brand">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Donte Hub Logo"> 
+                <a href="#">Donte Hub</a>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Donations</a>
+            <a href="index.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="heading">
+            <h2>Stationery Donation</h2>
+            <p>Your generous donations can help students in need. Here’s how you can contribute:</p>
+            <img src="dstay.jpeg" alt="home-image">
+        </div>
+
+        <form id="donationForm">
+            <div class="form-group">
+                <label for="category">Select Category:</label>
+                <select id="category" name="category" class="form-control">
+                    <option value="notebooks">Notebooks</option>
+                    <option value="pens">Pens</option>
+                    <option value="pencils">Pencils</option>
+                    <option value="art_supplies">Art Supplies</option>
+                    <option value="folders">Folders</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Select Quantity:</label>
+                <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="100" placeholder="Enter quantity">
+            </div>
+            <br/>
+            <button type="button" id="donationButton" class="btn1"onclick="showThankYouMessage()">DONATE</button>
+            <script>
+                function showThankYouMessage() {
+                    // Show an alert when the button is clicked
+                    alert("Thank you for donating!");
+                }
+            </script>
+        </form>
+
+        <div id="donationModal" class="modal">
+            <div class="modal-content">
+                <br/>
+                <h3>Thank You for Your Interest!</h3>
+                <p>Your donations make a significant impact. Please reach out to us for more details.</p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <br/>
+            <h3>Contact Us for More Information:</h3>
+            <p>Email: <a href="mailto:support@dontehub.com">support@dontehub.com</a></p>
+            <p>Phone: <a href="9623488222">9623488222</a></p>
+        </div>
+    </div>
+    <br/><br/>
+    <footer>
+        <p>&copy; 2024 Donte Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
